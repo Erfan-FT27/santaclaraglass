@@ -642,14 +642,22 @@ ul, ol {
 .hero-slider .owl-stage-outer, .hero-slider .owl-stage, .hero-slider .owl-item, .hero-slider .hs-item {
 	height: 100%;
 }
+
+.text-bold{
+	font-weight: 700;
+}
+.text-primary {
+	color: #ffa200;
+}
 /*---------------------
   About US
 -----------------------*/
 
 .about-text {
-	text-align: center;
+	text-align: left;
 	padding: 0 35px;
 }
+
 .about-text p {
 	color: #595960;
 	font-weight: 500;
@@ -658,8 +666,9 @@ ul, ol {
 	margin-bottom: 10px;
 }
 .about-text p.s-para {
-	margin-bottom: 35px;
+	margin-bottom: 5px;
 }
+
 .about-text .about-btn {
 	color: #19191a;
 }
@@ -728,7 +737,7 @@ ul, ol {
 	overflow: hidden;
 }
 .hp-room-items .hp-room-item {
-	height: 600px;
+	height: 500px;
 	margin-right: -15px;
 	position: relative;
 	overflow: hidden;
@@ -1528,9 +1537,10 @@ ul, ol {
 	padding-bottom: 88px;
 }
 .blog-item {
-	height: 450px;
+	height: 350px;
 	position: relative;
 	margin-bottom: 30px;
+	max-resolution: res;
 	border-radius: 5px;
 }
 .blog-item.small-size {
@@ -1547,7 +1557,7 @@ ul, ol {
 .blog-item .bi-text .b-tag {
 	display: inline-block;
 	color: #ffffff;
-	font-size: 12px;
+	font-size: 17px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	background: #dfa974;
@@ -1950,16 +1960,49 @@ ul, ol {
 .map iframe {
 	width: 100%;
 }
+.sub_heading{color:#c9c9c9;display:block;font-size:14px;text-transform:uppercase;font-weight:500;font-family:"Roboto",sans-serif;letter-spacing:3px;margin-bottom:22px}
+.messege_thumb{margin-bottom:30px}
+.messege input {
+	width: 100%;
+	height: 60px;
+	border: 1px solid #c9c9c9;
+	padding-left: 25px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.messege input::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+}
+.messege textarea {
+	width: 100%;
+	height: 120px;
+	border: 1px solid #c9c9c9;
+	padding-left: 25px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	padding-top: 25px;
+}
+.messege textarea::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.boxed-btn:hover{background:#131313;color:#fff !important;border:1px solid #131313}
+.boxed-btn:focus{outline:none}
+.boxed-btn.large-width{width:220px}
+.boxed-btn{background:#fff;color:#131313;display:inline-block;padding:18px 44px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400;border:0;border:1px solid #131313;letter-spacing:3px;text-align:center;color:#131313 !important;text-transform:uppercase}
+
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
 	.hp-room-items .hp-room-item .hr-text {
-		bottom: -200px;
+		bottom: -80px;
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1250px) {
 	.hp-room-items .hp-room-item .hr-text {
-		bottom: -288px;
+		bottom: -90px;
 	}
 }
 @media only screen and (min-width: 1200px) {
@@ -1977,7 +2020,7 @@ ul, ol {
 		right: -150px;
 	}
 	.hp-room-items .hp-room-item .hr-text {
-		bottom: -322px;
+		bottom: -120px;
 	}
 	.hp-room-items .hp-room-item:hover .hr-text {
 		bottom: 80px;
@@ -2253,7 +2296,7 @@ ul, ol {
 		margin: 0;
 	}
 	.hp-room-item {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 }
 /* Large Mobile: 480px */
